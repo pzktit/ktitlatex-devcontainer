@@ -1,0 +1,86 @@
+{
+  "editor.wordWrap": "on",
+  "files.eol": "\n",
+  // Language settings
+//   "ltex.language": "pl-PL",
+  "ltex.language": "en-US",
+  // View and Sync
+  "latex-workshop.view.outline.sync.viewer": true,
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.view.pdf.hand": true,
+  "latex-workshop.view.pdf.ref.viewer": "tabOrBrowser",
+  "latex-workshop.view.pdf.tab.editorGroup": "right",
+  "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+//   "latex-workshop.view.pdf.invertMode.enabled": "never",
+  "latex-workshop.view.pdf.invertMode.enabled": "auto",
+//   "latex-workshop.view.pdf.invert": 0.9,
+  // Build
+  "latex-workshop.latex.build.forceRecipeUsage": false,
+  "latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": false,
+  // PLease select default recipe to build your document
+  "latex-workshop.latex.recipe.default": "latexmk (pdflatex)",
+  "latex-workshop.latex.recipes": [
+      {
+          "name": "latexmk (pdflatex)",
+          "tools": [
+              "latexmk"
+          ]
+      },
+      {
+          "name": "latexmk (lualatex)",
+          "tools": [
+              "lualatexmk"
+          ]
+      },
+      {
+          "name": "latexmk (xelatex)",
+          "tools": [
+              "xelatexmk"
+          ]
+      }
+  ],
+  "latex-workshop.latex.tools": [
+      {
+          "name": "latexmk",
+          "command": "latexmk",
+          "args": [
+              "-synctex=1",
+              "-interaction=nonstopmode",
+              "-shell-escape", 
+              "-file-line-error",
+              "-pdf",
+              "-outdir=%OUTDIR%",
+              "%DOC%"
+          ],
+          "env": {}
+      },
+      {
+          "name": "lualatexmk",
+          "command": "latexmk",
+          "args": [
+              "-synctex=1",
+              "-shell-escape", 
+              "-interaction=nonstopmode",
+              "-file-line-error",
+              "-lualatex",
+              "-outdir=%OUTDIR%",
+              "%DOC%"
+          ],
+          "env": {}
+      },
+      {
+          "name": "xelatexmk",
+          "command": "latexmk",
+          "args": [
+              "-synctex=1",
+              "-interaction=nonstopmode",
+              "-shell-escape", 
+              "-file-line-error",
+              "-xelatex",
+              "-outdir=%OUTDIR%",
+              "%DOC%"
+          ],
+          "env": {}
+      }
+  ]            
+}

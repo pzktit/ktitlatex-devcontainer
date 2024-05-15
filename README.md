@@ -10,7 +10,7 @@ Example of configuring Dev Containers for LaTeX document preparation in Visual S
 
 ## For the impatient
 
-[ktitlatex | Example of using Dev Container technology for LaTeX document preparation.](https://pzktit.github.io/ktitlatex/)
+[ktitlatex - Example of using Dev Container technology for LaTeX document preparation.](https://pzktit.github.io/ktitlatex/)
 
 
 ## User's manual

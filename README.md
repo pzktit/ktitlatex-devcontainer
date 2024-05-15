@@ -1,6 +1,6 @@
 # ktitlatex-devcontainer
 
-Example of using Dev Containers for LaTeX document preparation in Visual Studio Code.
+Example of configuring Dev Containers for LaTeX document preparation in Visual Studio Code.
 
 ## What you need to use it
 
@@ -10,11 +10,8 @@ Example of using Dev Containers for LaTeX document preparation in Visual Studio 
 
 ## For the impatient
 
-1. Clone the following repository
-   ```bash
-   git clone https://github.com/pzktit/ktitlatex
-   ```
-2. Please follow the instructions from README.md.
+[ktitlatex | Example of using Dev Container technology for LaTeX document preparation.](https://pzktit.github.io/ktitlatex/)
+
 
 ## User's manual
 

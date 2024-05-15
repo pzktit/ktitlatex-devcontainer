@@ -1,5 +1,7 @@
 FROM texlive/texlive:latest
 
+# RUN tlmgr update --self && tlmgr update --all && tlmgr check all && tlmgr clean --all
+
 ARG USERNAME=vscode
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID

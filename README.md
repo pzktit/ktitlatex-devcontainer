@@ -53,7 +53,7 @@ You need an account on [Docker Hub Container Image Library](https://hub.docker.c
 
 1.  Find it's ID with
     ```bash
-    docker ps -a | grep ktitlatex
+    docker ps -a | grep ktitlatex | cut -f 1 -d ' '
     ```
 1.  Store container as docker image in your local repository
     ```bash
@@ -72,24 +72,24 @@ You need an account on [Docker Hub Container Image Library](https://hub.docker.c
 On docker you also need to create repository `ktitlatex`.
 1.  Login in your repository with
     ```bash
-    docker login <your_account>/ktitlatex
+    docker login docker.io -u <your_account> -p <your_personal_access_token>
     docker login ghcr.io -u <your_gh_account> -p <your_personal_access_token>
     ```
     Please use `Personal Access Tokens` for that. They can be generated via the web interface of your account.
 1. Tag your local image according to the account you are using
    ```bash
-   docker tag ktitlatex <your_account>/ktitlatex
+   docker tag ktitlatex docker.io/<your_account>/ktitlatex
    docker tag ktitlatex ghcr.io/<your_gh_account>/ktitlatex
    ```
 1. Then push your image to the remote repo
     ```bash
-    docker push <your_account>/ktitlatex
+    docker push docker.io/<your_account>/ktitlatex
     docker push ghcr.io/<your_gh_account>/ktitlatex
     ```
 1. Then on any system you can use the following `devcontainer.json`
     ```json
     {
-        "image" : "<your_account>/ktitlatex"
+        "image" : "docker.io/<your_account>/ktitlatex"
         // "image" : "ghcr.io/<your_gh_account>/ktitlatex"
     }
     ```

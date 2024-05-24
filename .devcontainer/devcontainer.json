@@ -17,8 +17,10 @@
 			"extensions": [
 				"james-yu.latex-workshop",
 				"alefragnani.numbered-bookmarks",
-				"valentjn.vscode-ltex",
-				"Tyriar.luna-paint"
+				"Tyriar.luna-paint",
+				"neo-ltex.ltex",
+				"marp-team.marp-vscode",
+				"yzhang.markdown-all-in-one"
 			],
 			"settings": {
 				"terminal.integrated.defaultProfile.linux": "zsh",

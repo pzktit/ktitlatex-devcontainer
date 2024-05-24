@@ -53,7 +53,7 @@ You need an account on [Docker Hub Container Image Library](https://hub.docker.c
 
 1.  Find it's ID with
     ```bash
-    docker ps -a | grep ktitlatex | cut -f 1 -d ' '
+    docker ps -a | grep ktitlatex-devcontainer | cut -f 1 -d ' '
     ```
 1.  Store container as docker image in your local repository
     ```bash
